@@ -8,4 +8,6 @@ function init(){
 function feldolgoz() {
     lista.push(document.getElementById("szam").value);
     document.getElementById("lista").innerHTML = lista.join(",");
+    document.getElementById("lista").innerHTML += "<br>legkisebb elem: "+Math.min(...lista);
+
 }
